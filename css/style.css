@@ -192,11 +192,12 @@ section img {
   pointer-events: none;
 }
 
-section img#moon {
+#section img#moon {
   mix-blend-mode: screen;
+  margin-top: 10px;
 }
 
-section img#mountains_front {
+#section img#mountains_front {
   z-index: 10;
   /* @media screen and (min-width: 973px) {
     height: calc(100vh - 100px);
@@ -2935,9 +2936,8 @@ html.has-scroll-dragging {
 .project__info .project__image {
   flex: 0 0 50%;
   position: absolute;
-  left: 25%;
+  left: 12%;
   width: 50%;
-  left: 70px;
 }
 .project__info .project__dtls {
   flex: 0 0 45%;
@@ -3099,5 +3099,359 @@ html.has-scroll-dragging {
   text-decoration: none;
   color: inherit;
 }
+
+/**
+ * Tabs
+ */
+.tabs__section {
+  display: flex;
+  max-width: 100vw;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.image__tab {
+  flex: 0 0 40%;
+  width: 100%;
+  background: url("http://m.gettywallpapers.com/wp-content/uploads/2020/03/Black-Wallpaper-For-Computer-1-1024x576.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tabs {
+  display: flex;
+  flex: 0 0 55%;
+  flex-wrap: wrap;
+  width: 55%;
+}
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: var(--color-primary-light);
+  font-weight: bold;
+  transition: background ease 0.2s;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 90%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background: var(--color-primary-dark);
+  backdrop-filter: blur(3px);
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.tab h1 {
+  color: #eb2b3e;
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.tab h3 {
+  margin: 10px 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tab h2 {
+  margin: 10px 10px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: aqua;
+}
+
+.tab p {
+  margin: 10px 10px;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: 18px;
+}
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs input[type=radio]:checked + label {
+  background: #fff;
+}
+
+.tabs input[type=radio]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+.tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+.skills {
+  padding: 10px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill {
+  width: 100%;
+  margin: 5px 2px;
+}
+.skill .title {
+  color: aqua;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.progress-bar {
+  background: #404040;
+  border-radius: 2px;
+  width: 100%;
+  height: 5px;
+  margin-top: 1px;
+  /*   overflow: hidden; */
+}
+
+.progress {
+  /*   width: 0; */
+}
+
+#html .progress {
+  max-width: 90%;
+  height: 100%;
+  background: var(--color-primary-light);
+  border-radius: 3px;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars;
+}
+
+#html .progress::after {
+  content: "90%";
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #262626;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#html .progress::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #262626;
+}
+
+#css .progress {
+  max-width: 80%;
+  height: 100%;
+  background: var(--color-primary-light);
+  position: relative;
+  animation: 1s ease 0s 1 loadBars;
+}
+
+#css .progress::after {
+  content: "80%";
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #262626;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#css .progress::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #262626;
+}
+
+#js .progress {
+  max-width: 70%;
+  height: 100%;
+  background: var(--color-primary-light);
+  position: relative;
+  animation: 1s ease 0s 1 loadBars;
+}
+
+#js .progress::after {
+  content: "70%";
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #262626;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#js .progress::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #262626;
+}
+
+#react .progress {
+  max-width: 60%;
+  height: 100%;
+  background: var(--color-primary-light);
+  position: relative;
+  animation: 1s ease 0s 1 loadBars;
+}
+
+#react .progress::after {
+  content: "60%";
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #262626;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#react .progress::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -5px;
+  top: -12px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #262626;
+}
+
+@keyframes loadBars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#box1,
+#box2,
+#box3 {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+#box1 h2,
+#box2 h2,
+#box3 h2 {
+  font-size: 1vw;
+  text-align: left;
+  font-weight: thin;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  line-height: 2vw;
+}
+#box1 p,
+#box2 p,
+#box3 p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 5%;
+  line-height: 1.8rem;
+}
+#box1 #icon,
+#box2 #icon,
+#box3 #icon {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+#box1 i,
+#box2 i,
+#box3 i {
+  font-size: 55px;
+  color: Mediumslateblue;
+}
+
+#box1 #icon {
+  background: #7100DB;
+}
+
+#box2 #icon {
+  background: #6700FF;
+}
+
+#box3 #icon {
+  background: #FF5A6D;
+}
+
+img {
+  position: relative;
+  width: 80%;
+  margin-top: 5%;
+}
+
+#box2 img {
+  transform: translateY(3px);
+}
+
+/**
+ * Generic Styling
+*/
 
 /*# sourceMappingURL=style.css.map */

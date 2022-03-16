@@ -3,22 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-		     
-        <link rel="shortcut icon" type="icon" href="./img/favicon.ico">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+      <link rel="shortcut icon" type="icon" href="./img/favicon.ico">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <script src="https://kit.fontawesome.com/4e3d164ae4.js" crossorigin="anonymous"></script> -->
         <title>Reggie Viray &mdash; Portfolio</title>
     </head>
     <body>
-        <header >
+        <header>
             <a href="#" class="logo">RViray</a>
             <ul class="menu">
               <li><a href="#" class="active">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="work-1.html">Work</a></li>
+              <li><a href="work2.html">Work</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </header>
@@ -76,50 +80,110 @@
 
           </div>
 
-          <div class="container--works">
-            <h1 class="main-title">My Works</h1>
-            <p class="sub-title">The latest projects made with passion and commitment.</p>
+          <div class="tabs__section">
+
+            <div class="tabs">
+              <input type="radio" name="tabs" id="tabone" checked="checked">
+              <label for="tabone">Education</label>
+              <div class="tab">
+                <h1>Educational Background</h1>
+                <br>
+                  <h2>FULL STACK WEB DEVELOPER BOOTCAMP</h2>
+                  <h3>ZUITT BOOTCAMP QUEZON CITY</h3>
+                  <p>June 2020</p>
+                <br>
+                  <h2>BS METALLURGICAL ENGINEERING</h2>
+                  <h3>MAPUA INSTITUTE OF TECHNOLOGY</h3>
+                  <p>April 1995</p>
+                
+                </div>
+              
+              <input type="radio" name="tabs" id="tabtwo">
+              <label for="tabtwo">Skills</label>
+              <div class="tab">
+                <h1>Skills Acquired</h1>
+                <div class="skills">
+                  <div class="skill" id="html">
+                    <span class="title">HTML</span>
+                    <div class="progress-bar">
+                      <div class="progress"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="skill" id="css">
+                    <span class="title">CSS</span>
+                    <div class="progress-bar">
+                      <div class="progress"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="skill" id="js">
+                    <span class="title">Javascript</span>
+                    <div class="progress-bar">
+                      <div class="progress"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill" id="react">
+                    <span class="title">React</span>
+                    <div class="progress-bar">
+                      <div class="progress"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+              <input type="radio" name="tabs" id="tabthree">
+              <label for="tabthree">Services</label>
+              <div class="tab">
+                <h1>Services</h1>
+                <div id="box1">
+                  <h2>Front End Development</h2>
+                  <p>I can develop responsive, accessible, and performant websites. I am willing to code the design of your website and more than willing to share my inputs to your design.</p>
+                
+                    <span >
+                      <span style="color: Mediumslateblue;">
+                      
+                      <i class="fas fa-laptop-code"></i>
+                      </span>
+                    </span>
+                   
+                </div>
+                <div id="box2">
+                  <h2>Database Design</h2>
+                  <span >
+                    <span >
+                     
+                      <i class="fas fa-database"></i>
+                    
+                    </span>
+                  </span>
+                  <p>I am also capable of setting up and developing the backend of your application.</p>
+                </div>
+                <div id="box3">
+                  <h2>Full Stack Web Development</h2>
+                  <p>If you want me to also develop the backend of your application, I am more than willing to oblige. I can develop both the backend and the front end of your website.</p>
+                  <span >
+                    <span style="color: Mediumslateblue;">
+                  
+                    <i class="fas fa-server"></i>
+                   
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="image__tab">
+
+            </div>
           </div>
 
-          <div class="news container--works">
-            <div class="box vertical box1" data-aos="fade-right" data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500">
-              <div class="genre">Food</div>
-              <h3 class="title">Wake Up and Smell the Coffee</h3>
-              <a href="work2.html" class="read-btn">Read for $0.99</a>
-            </div>
-            <div class="box horizontal box2" data-aos="fade-down"  data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500" data-aos-delay="1000">
-              <div class="genre">Architecture</div>
-              <h3 class="title">The Brand New Nasa Office</h3>
-              <a href="#" class="read-btn">Read for $0.99</a>
-            </div>
-            <div class="box horizontal box3" data-aos="fade-down"  data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500" data-aos-delay="1000" >
-              <div class="genre">Travel</div>
-              <h3 class="title">Experience the Saharan Sands</h3>
-              <a href="#" class="read-btn">Read for $0.99</a>
-            </div>
-            <div class="box horizontal box4" data-aos="fade-up"  data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500" data-aos-delay="1000">
-              <div class="genre">Interior</div>
-              <h3 class="title">9 Air-Cleaning Plants Your Home Needs</h3>
-              <a href="#" class="read-btn">Read for $0.99</a>
-            </div>
-            <div class="box horizontal box5" data-aos="fade-up"  data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500" data-aos-delay="1000">
-              <div class="genre">Food</div>
-              <h3 class="title">One Month Sugar Detox</h3>
-              <a href="#" class="read-btn">Read for $0.99</a>
-            </div>
-            <div class="box vertical box6" data-aos="fade-left" data-aos-easing="ease-out-cubic"
-            data-aos-duration="1500" data-aos-delay="800">
-              <div class="genre">Photography</div>
-              <h3 class="title">Shooting Minimal Instagram Photos</h3>
-              <a href="#" class="read-btn">Read for $0.99</a>
-            </div>
-          </div>
+          
 
+
+          
           <div class="header__footer">
 
             <!--Waves Container-->
@@ -167,7 +231,7 @@
             </div>
             <!--Waves end-->            
           </div> 
-    
+          
 		
    
       <script>
@@ -208,4 +272,47 @@
 </script>
 </body>
 </html>
+<!-- 
+<div class="container--works">
+  <h1 class="main-title">My Works</h1>
+  <p class="sub-title">The latest projects made with passion and commitment.</p>
+</div>
 
+<div class="news container--works">
+  <div class="box vertical box1" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500">
+    <div class="genre">Food</div>
+    <h3 class="title">Wake Up and Smell the Coffee</h3>
+    <a href="work2.html#first-proj" class="read-btn">Read for $0.99</a>
+  </div>
+  <div class="box horizontal box2" data-aos="fade-down"  data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500" data-aos-delay="1000">
+    <div class="genre">Architecture</div>
+    <h3 class="title">The Brand New Nasa Office</h3>
+    <a href="#" class="read-btn">Read for $0.99</a>
+  </div>
+  <div class="box horizontal box3" data-aos="fade-down"  data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500" data-aos-delay="1000" >
+    <div class="genre">Travel</div>
+    <h3 class="title">Experience the Saharan Sands</h3>
+    <a href="#" class="read-btn">Read for $0.99</a>
+  </div>
+  <div class="box horizontal box4" data-aos="fade-up"  data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500" data-aos-delay="1000">
+    <div class="genre">Interior</div>
+    <h3 class="title">9 Air-Cleaning Plants Your Home Needs</h3>
+    <a href="#" class="read-btn">Read for $0.99</a>
+  </div>
+  <div class="box horizontal box5" data-aos="fade-up"  data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500" data-aos-delay="1000">
+    <div class="genre">Food</div>
+    <h3 class="title">One Month Sugar Detox</h3>
+    <a href="#" class="read-btn">Read for $0.99</a>
+  </div>
+  <div class="box vertical box6" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+  data-aos-duration="1500" data-aos-delay="800">
+    <div class="genre">Photography</div>
+    <h3 class="title">Shooting Minimal Instagram Photos</h3>
+    <a href="#" class="read-btn">Read for $0.99</a>
+  </div>
+</div> -->
