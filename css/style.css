@@ -72,6 +72,10 @@ header {
   align-items: center;
   z-index: 10000;
   font-size: 2rem;
+  background: rgba(159, 159, 207, 0.1);
+  height: 100px;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 header .logo {
@@ -196,6 +200,7 @@ section img {
   mix-blend-mode: lighten;
   width: fit-content;
   height: fit-content;
+  margin-top: 5px;
 }
 
 #section img#mountains_front {
@@ -487,13 +492,6 @@ h3.title {
   margin-top: 10px;
   max-width: 250px;
   color: #fff;
-}
-
-.genre {
-  text-transform: uppercase;
-  font-size: 12px;
-  opacity: 0.6;
-  color: var(--color-primary-light);
 }
 
 p.sub-title {
@@ -1128,6 +1126,7 @@ header .logo {
   color: aqua;
   max-width: 100%;
   font-weight: 100;
+  font-size: 4rem;
 }
 
 .home__header__content .title strong,
@@ -1135,7 +1134,7 @@ header .logo {
 .rich-content .home__header__content h2 strong,
 .two-cols .home__header__content h2 strong {
   display: block;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem;
   color: #eb2b3e;
   font-weight: 800;
   font-size: 6rem;
@@ -1152,7 +1151,8 @@ header .logo {
 .home__header__content p {
   color: #fff;
   font-weight: lighter;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -1160,138 +1160,6 @@ header .logo {
     color: #fff;
   }
 }
-header {
-  /* background: #cce; */
-  background: rgba(159, 159, 207, 0.1);
-  height: 100px;
-  transition: 0.3s ease;
-  backdrop-filter: blur(10px);
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* max-width: 100%; */
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10000;
-  /* font-size: 1.2rem; */
-  font-size: 28px;
-}
-
-header .logo {
-  color: aqua;
-  font-weight: 700;
-  text-decoration: none;
-  /* font-size: 1.5em; */
-  /* font-size: 2em; */
-  text-transform: uppercase;
-  /* letter-spacing: 2px; */
-  /* @media screen and (min-width: 628px) {
-    font-size: 10px;
-    letter-spacing: 1px; 
-  }  */
-}
-
-/* @media screen and (max-width: $bp-medium) {
-
-
-  header .logo {
-    font-size: 24px;
-    color: var(--color-primary-light-1);
-  }
-
-  header ul li a {
-    font-size: 16px;
-    padding: 4px 12px;
-  }
-
-} */
-/* @media screen and (max-width: $bp-smallest) {
-  header .logo {
-    font-size: 1rem;
-
-  }
-
-  header ul li a {
-    font-size: 14px;
-    padding: 2px 8px;
-  }
-} */
-/* 
-@media screen and (max-width: 970px) and (min-width: 629px) {
-  section{
-    height: 90vh;
-  } 
-} */
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header ul li {
-  list-style: none;
-  margin-left: 20px;
-  font-size: 14px;
-}
-
-header ul li a {
-  text-decoration: none;
-  padding: 6px 15px;
-  color: #fff;
-  border-radius: 20px;
-}
-
-header ul li a:hover,
-header ul li a.active {
-  background: #fff;
-  color: var(--color-primary);
-}
-
-.header__footer {
-  position: relative;
-  text-align: center;
-  background: black;
-  /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
-  color: white;
-}
-
-.logo {
-  width: 50px;
-  fill: white;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.inner-header {
-  height: 65vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.flex {
-  /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-  /* background: black; */
-}
-
 .content {
   position: relative;
   height: 30vh;
@@ -2360,14 +2228,14 @@ html.has-scroll-dragging {
   justify-content: flex-end;
   width: 50vw;
   top: 25%;
-  left: 40%;
+  left: 35%;
   align-items: flex-end;
   position: absolute;
 }
 .project__info .project__description {
   background-color: rgba(148, 0, 211, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 90%;
+  width: 80%;
   height: 150px;
   border-radius: 5px;
   padding: 15px 10px;
@@ -2381,7 +2249,7 @@ html.has-scroll-dragging {
 }
 .project__info .info__desc {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: lighter;
   width: fit-content;
 }
@@ -2435,13 +2303,13 @@ html.has-scroll-dragging {
   position: absolute;
   width: 50vw;
   top: 25%;
-  left: 10%;
+  left: 12%;
   align-items: flex-start;
 }
 .project__info2 .project__description2 {
   background-color: rgba(148, 0, 211, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 90%;
+  width: 80%;
   height: 150px;
   border-radius: 5px;
   padding: 15px 10px;
@@ -2456,7 +2324,7 @@ html.has-scroll-dragging {
 }
 .project__info2 .info__desc2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: lighter;
   width: fit-content;
 }
@@ -2865,13 +2733,10 @@ img {
   transform: translateY(3px);
 }
 
-/**
- * Generic Styling
-*/
 .container__contact {
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: black;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -2880,7 +2745,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 5%;
   left: 0;
 }
 
@@ -2913,23 +2778,31 @@ form.sign-up-form {
   z-index: 1;
 }
 
+.subtitle__contact {
+  font-size: 2rem;
+  color: aqua;
+  margin-bottom: 20px;
+}
+
 form.sign-in-form {
   z-index: 2;
 }
 
 .title__contact {
-  font-size: 2.2rem;
-  color: #444;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--color-primary-light);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .input-field {
-  max-width: 380px;
+  max-width: 300px;
   width: 100%;
   background-color: #f0f0f0;
   margin: 10px 0;
-  height: 55px;
-  border-radius: 55px;
+  height: 50px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
@@ -2962,6 +2835,7 @@ form.sign-in-form {
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
+  color: aqua;
 }
 
 .social-media {
@@ -2976,26 +2850,26 @@ form.sign-in-form {
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: #333;
+  color: #6700FF;
   border-radius: 50%;
-  border: 1px solid #333;
+  border: 1px solid #6700FF;
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;
 }
 
 .social-icon__contact:hover {
-  color: #4481eb;
-  border-color: #4481eb;
+  color: #eb2b3e;
+  border-color: #eb2b3e;
 }
 
 .btn__contact {
   width: 150px;
-  background-color: #5995fd;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #6700FF;
   outline: none;
-  height: 49px;
-  border-radius: 49px;
+  height: 40px;
+  border-radius: 40px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -3005,7 +2879,8 @@ form.sign-in-form {
 }
 
 .btn__contact:hover {
-  background-color: #4d84e2;
+  border: 1px solid #eb2b3e;
+  color: #eb2b3e;
 }
 
 .panels-container {
@@ -3021,12 +2896,12 @@ form.sign-in-form {
 .container__contact:before {
   content: "";
   position: absolute;
-  height: 2000px;
-  width: 2000px;
-  top: -10%;
-  right: 48%;
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  right: 58%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(-45deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -3258,5 +3133,45 @@ form.sign-in-form {
     left: 50%;
   }
 }
+.input-field__message {
+  max-width: 300px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 120px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.input-field__message i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field__message textarea {
+  grid-column: 2/4;
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field__message textarea::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+/**
+ * Generic Styling
+*/
 
 /*# sourceMappingURL=style.css.map */
