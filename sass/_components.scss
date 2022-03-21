@@ -3354,28 +3354,32 @@ html.has-scroll-dragging {
   align-items: center;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 
   .project__image{
     flex: 0 0 50%;
     position: absolute;
     left: 12%;
-    width: 50%;
-    
+    //width: 750px;
+    //height: 600px;
+    width: 55%;
+    height: 50%;
+    border-radius: 10px;
    
   }
 
   .project__dtls {
    flex: 0 0 45%;
+   position: absolute;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
    width: 50vw;
-   top: 25%;
+   top: 30%;
    left: 35%;
    align-items: flex-end;
    
-   position: absolute;
+   
   
   }
 
@@ -3438,19 +3442,22 @@ html.has-scroll-dragging {
 }
 
 
-
 .project__info2 {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 
   .project__image2{
     flex: 0 0 50%;
     position: absolute;
-    width: 50%;
+    width: 55%;
+    height: 50%;
+    //width: 750px;
+    //height: 600px;
+    border-radius: 10px;
     left: 45%;
   }
 
@@ -3460,7 +3467,7 @@ html.has-scroll-dragging {
    flex-direction: column;
    position: absolute;
    width: 50vw;
-   top: 25%;
+   top: 30%;
    left: 12%;
    align-items: flex-start;
    //justify-content: flex-start;
