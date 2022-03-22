@@ -198,9 +198,6 @@ section img {
 
 #section img#moon {
   mix-blend-mode: lighten;
-  width: fit-content;
-  height: fit-content;
-  margin-top: 5px;
 }
 
 #section img#mountains_front {
@@ -456,7 +453,7 @@ section h2#text {
 }
 @media screen and (max-width: 56.25em) {
   .info--2__sub-heading {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
 .info--2__detail {
@@ -504,261 +501,23 @@ p.sub-title {
   font-weight: lighter;
 }
 
-.container--works {
-  width: 900px;
-  margin: 60px auto 100px auto;
-}
-@media (max-width: 980px) {
-  .container--works {
-    width: 100%;
-  }
-}
-
-.news {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 200px);
-}
-@media (max-width: 980px) {
-  .news {
-    grid-template-rows: repeat(7, 200px);
-  }
-}
-
-.box {
-  background-color: grey;
-  border-radius: 10px;
-  padding: 20px;
-  color: white;
-  position: relative;
-}
-@media (max-width: 980px) {
-  .box {
-    background-size: 120%;
-  }
-}
-
-.read-btn {
-  background-color: white;
-  font-size: 12px;
-  padding: 8px 20px;
-  border-radius: 15px;
-  position: absolute;
-  bottom: 15px;
-  transition: transform 0.2s ease-in-out;
-}
-.read-btn:hover {
-  transform: translateX(5px);
-}
-
-.box {
-  background-position: center;
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-.box1 {
-  grid-column: 1/3;
-  background-image: url(https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  box-shadow: 3px 3px 20px 0px rgba(59, 168, 163, 0.25);
-}
-@media (max-width: 980px) {
-  .box1 {
-    grid-column: 1/6;
-    grid-row: 1/2;
-  }
-}
-.box1:hover {
-  box-shadow: 3px 3px 20px 0px rgba(59, 168, 163, 0.55);
-}
-.box1 .read-btn {
-  color: #7bb0ad;
-}
-
-.box2 {
-  grid-column: 3/4;
-  grid-row: 1/3;
-  background-image: url(https://images.pexels.com/photos/1643389/pexels-photo-1643389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  box-shadow: 3px 3px 20px 0px rgba(2, 48, 76, 0.25);
-}
-@media (max-width: 980px) {
-  .box2 {
-    grid-column: 1/6;
-    grid-row: 2/3;
-  }
-}
-.box2:hover {
-  box-shadow: 3px 3px 20px 0px rgba(2, 48, 76, 0.55);
-}
-.box2 .read-btn {
-  color: #152532;
-}
-
-.box3 {
-  grid-column: 4/5;
-  grid-row: 1/3;
-  background-image: url(https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  box-shadow: 3px 3px 20px 0px rgba(73, 34, 2, 0.25);
-}
-@media (max-width: 980px) {
-  .box3 {
-    grid-column: 1/6;
-    grid-row: 3/4;
-  }
-}
-.box3:hover {
-  box-shadow: 3px 3px 20px 0px rgba(73, 34, 2, 0.55);
-}
-.box3 .read-btn {
-  color: #cd935b;
-}
-
-.box4 {
-  grid-column: 1/2;
-  grid-row: 2/4;
-  background-image: url(https://images.pexels.com/photos/2343468/pexels-photo-2343468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.25);
-}
-@media (max-width: 980px) {
-  .box4 {
-    grid-column: 1/6;
-    grid-row: 4/5;
-  }
-}
-.box4:hover {
-  box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.55);
-}
-.box4 .read-btn {
-  color: #43acc9;
-}
-
-.box5 {
-  grid-column: 2/3;
-  grid-row: 2/4;
-  background-image: url(https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  box-shadow: 3px 3px 20px 0px rgba(255, 131, 199, 0.25);
-}
-@media (max-width: 980px) {
-  .box5 {
-    grid-column: 1/6;
-    grid-row: 5/6;
-  }
-}
-.box5:hover {
-  box-shadow: 3px 3px 20px 0px rgba(255, 131, 199, 0.55);
-}
-.box5 .read-btn {
-  color: #fea0a5;
-}
-
-.box6 {
-  grid-column: 3/5;
-  grid-row: 3/4;
-  background-image: url(https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.25);
-}
-@media (max-width: 980px) {
-  .box6 {
-    grid-column: 1/6;
-    grid-row: 6/7;
-  }
-}
-.box6:hover {
-  box-shadow: 3px 3px 20px 0px rgba(60, 162, 186, 0.55);
-}
-.box6 .read-btn {
-  color: #63bdfe;
-}
-
 .wrapper {
   width: 100vw;
   margin: 0 auto;
 }
 
-/* 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav .logo {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  color: #021718;
-}
-
-.nav-items li {
-  list-style: none;
-  margin-right: 100px;
-}
-
-.nav-items li:nth-last-of-type(1) {
-  margin: 0;
-}
-
-.nav-items li a {
-  color: #021718;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-} */
 /* Header */
-/* background: #cce; */
-/* position: absolute; */
 header .logo {
   color: aqua;
   font-weight: 700;
   text-decoration: none;
-  /* font-size: 1.5em; */
-  /* font-size: 2em; */
   text-transform: uppercase;
-  /* letter-spacing: 2px; */
   /* @media screen and (min-width: 628px) {
     font-size: 10px;
     letter-spacing: 1px; 
   }  */
 }
 
-/* @media screen and (max-width: $bp-medium) {
-
-
-  header .logo {
-    font-size: 24px;
-    color: var(--color-primary-light-1);
-  }
-
-  header ul li a {
-    font-size: 16px;
-    padding: 4px 12px;
-  }
-
-} */
-/* @media screen and (max-width: $bp-smallest) {
-  header .logo {
-    font-size: 1rem;
-
-  }
-
-  header ul li a {
-    font-size: 14px;
-    padding: 2px 8px;
-  }
-} */
-/* 
-@media screen and (max-width: 970px) and (min-width: 629px) {
-  section{
-    height: 90vh;
-  } 
-} */
-/* Hero image */
 .header__footer {
   position: relative;
   text-align: center;
@@ -2395,8 +2154,22 @@ html.has-scroll-dragging {
   margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
+  height: auto;
 }
 
+@media screen and (max-width: 37.5em) {
+  .tabs__section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin-top: 80px;
+  }
+
+  .image_tab {
+    margin-bottom: 30px;
+  }
+}
 .image__tab {
   flex: 0 0 40%;
   width: 100%;
@@ -2448,11 +2221,25 @@ html.has-scroll-dragging {
   margin-left: 10px;
   margin-top: 15px;
 }
+@media screen and (max-width: 56.25em) {
+  .tab h1 {
+    font-size: 1.5rem;
+    margin-left: 8px;
+    margin-top: 12px;
+  }
+}
 
 .tab h3 {
   margin: 10px 10px;
   font-size: 1.5rem;
   font-weight: 500;
+}
+@media screen and (max-width: 56.25em) {
+  .tab h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 8px 8px;
+  }
 }
 
 .tab h2 {
@@ -2461,12 +2248,26 @@ html.has-scroll-dragging {
   font-weight: 800;
   color: aqua;
 }
+@media screen and (max-width: 56.25em) {
+  .tab h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 8px 8px;
+  }
+}
 
 .tab p {
   margin: 10px 10px;
   font-weight: lighter;
   font-size: 1.4rem;
   line-height: 18px;
+}
+@media screen and (max-width: 56.25em) {
+  .tab p {
+    font-size: 1.2rem;
+    line-height: 12px;
+    margin: 8px 8px;
+  }
 }
 
 .tabs input[type=radio] {
@@ -2511,6 +2312,11 @@ html.has-scroll-dragging {
   font-weight: 300;
   font-size: 1.5rem;
   margin: 5px;
+}
+@media screen and (max-width: 56.25em) {
+  .skill .title {
+    font-size: 1rem;
+  }
 }
 
 .progress-bar {
@@ -2685,12 +2491,20 @@ html.has-scroll-dragging {
 #box1 h2,
 #box2 h2,
 #box3 h2 {
-  font-size: 1vw;
+  font-size: 1.8rem;
   text-align: left;
   font-weight: thin;
   margin-top: 5%;
   margin-bottom: 10%;
   line-height: 2vw;
+}
+@media screen and (max-width: 56.25em) {
+  #box1 h2,
+#box2 h2,
+#box3 h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
 }
 #box1 p,
 #box2 p,
@@ -2700,6 +2514,13 @@ html.has-scroll-dragging {
   margin: 5%;
   line-height: 1.8rem;
 }
+@media screen and (max-width: 56.25em) {
+  #box1 p,
+#box2 p,
+#box3 p {
+    font-size: 1.2rem;
+  }
+}
 #box1 #icon,
 #box2 #icon,
 #box3 #icon {
@@ -2708,11 +2529,26 @@ html.has-scroll-dragging {
   overflow: hidden;
   text-align: center;
 }
+@media screen and (max-width: 56.25em) {
+  #box1 #icon,
+#box2 #icon,
+#box3 #icon {
+    width: 90%;
+    border-radius: 40%;
+  }
+}
 #box1 i,
 #box2 i,
 #box3 i {
   font-size: 55px;
   color: Mediumslateblue;
+}
+@media screen and (max-width: 56.25em) {
+  #box1 i,
+#box2 i,
+#box3 i {
+    font-size: 25px;
+  }
 }
 
 #box1 #icon {
