@@ -3285,9 +3285,9 @@ html.has-scroll-dragging {
     flex-direction : column;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    //height: 120vh;
     margin-top: 80px;
-    
+    margin-left: 0;
   }
 
   .image_tab {
@@ -3355,6 +3355,12 @@ html.has-scroll-dragging {
       margin-left: 8px;
       margin-top: 12px;
   }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 1rem;
+    margin-left: 5px;
+    margin-top: 9px;
+  }
   
 }
 
@@ -3368,9 +3374,16 @@ html.has-scroll-dragging {
     font-weight: 300;
     margin: 8px 8px;
   }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 5px 5px;
+  }
+
 }
 
-.tab h2{
+.tab h2 {
   margin: 10px 10px;
   font-size: 1.8rem;
   font-weight: 800;
@@ -3382,27 +3395,34 @@ html.has-scroll-dragging {
     margin: 8px 8px;
   }
 
+  @media screen and (max-width: $bp-small) {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 5px 5px;
+  }
 
 }
-.tab p {
+.tab p{
   margin: 10px 10px;
   font-weight: lighter;
   font-size: 1.4rem;
   line-height: 18px;
 
   @media screen and (max-width: $bp-medium) {
-    font-size: 1.2rem;
-    line-height: 12px;
-    margin: 8px 8px;
+     font-size: 1.2rem;
+     line-height: 12px;
+     margin: 8px 8px;
   }
 
-  @media screen and (max-width: $bp-small) {
-    font-size: 0.9rem;
-    line-height: 5px;
-    margin: 5px 5px;
-  }
+   @media screen and (max-width: $bp-small) {
+     font-size: 0.9rem;
+     line-height: 10px;
+     margin: 5px 5px;
+   }
 
 }
+
+
 .tabs input[type="radio"] {
 	display: none;
 }
@@ -3660,9 +3680,15 @@ html.has-scroll-dragging {
 
 
     @media screen and (max-width: $bp-medium) {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 200;
-      
+      line-height: 1.9vw;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      font-size: 0.8rem;
+      font-weight: 100;
+      line-height: 1.8vw;
     }
   }
   
@@ -3676,9 +3702,13 @@ html.has-scroll-dragging {
 
     @media screen and (max-width: $bp-medium) {
       font-size: 1.2rem;
-      // /margin: 3%;
-      //line-height: 1.2rem;
-      
+      margin: 3%;
+      line-height: 1.6rem; 
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: .9rem;
+      margin: 1%;
+      line-height: 1rem; 
     }
   }
   
